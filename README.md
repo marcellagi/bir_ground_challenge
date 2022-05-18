@@ -20,3 +20,10 @@ The objective is to carry out the [mission](#mission) obeying the [prerequisites
 ## Mission
 
 ## Prerequisites
+
+- The challenge must be performed using [ROS2](https://docs.ros.org/en/foxy/index.html)
+- For autonomous navigation, ***state-machine*** must be used
+- The robot must build the environment ***map*** while executing the mission
+- The robot must use **three** [fiducial markers](#aruco-fiducial-marker) that must be present in the environment
+
+## ArUco fiducial marker
