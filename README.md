@@ -23,21 +23,29 @@ The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/ov
 
 ### Environment
 
-#### figure
+#### Example environment
 
 ![figure](./source/envedited.png)
 
 ### Object
 
+The object to be identified is an orange ball
+
+<img src="./source/ball.jpg" alt="drawing" width="300"/>
+
 ### ArUco fiducial marker
+
+The markers used must be of the ArUco type
+
+<img src="./source/aruco.png" alt="drawing" width="400"/>
 
 ## Prerequisites
 
 - The challenge must be performed using [ROS2](https://docs.ros.org/en/foxy/index.html)
 - For autonomous navigation, ***state-machine*** must be used
-- The environment must be built
-- The robot must build the [environment](#environment) map while executing the [mission](#mission)
-- The robot must use **three** [fiducial markers](#aruco-fiducial-marker) for localization that must be present in the environment
+- The simulation and real [environment](#environment) must be built based on the [example environment](#example-environment)
+- The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must make the [environment](#environment) map while executing the [mission](#mission)
+- The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must use **three** [fiducial markers](#aruco-fiducial-marker) for localization
 
 
 
