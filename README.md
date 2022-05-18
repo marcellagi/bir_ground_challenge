@@ -19,11 +19,21 @@ The objective is to carry out the [mission](#mission) obeying the [prerequisites
 
 ## Mission
 
+The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must go through a delimited [environment](#Environment) starting at the start point highlighted in the figure, being positioned with the camera facing away from the entrance. The mission environment is similar to a labyrinth, composed of two corridors and with the 3 previously placed [fiducial markers](#aruco-fiducial-marker). The robot must go through the environment completely and reach the end point, at the end of the route (arrival at the final point) there will be an [object](#object) that must be identified.
+
+### Environment
+
+### Object
+
+### ArUco fiducial marker
+
 ## Prerequisites
 
 - The challenge must be performed using [ROS2](https://docs.ros.org/en/foxy/index.html)
 - For autonomous navigation, ***state-machine*** must be used
-- The robot must build the environment ***map*** while executing the mission
-- The robot must use **three** [fiducial markers](#aruco-fiducial-marker) that must be present in the environment
+- The environment must be built
+- The robot must build the [environment](#environment) map while executing the [mission](#mission)
+- The robot must use **three** [fiducial markers](#aruco-fiducial-marker) for localization that must be present in the environment
 
-## ArUco fiducial marker
+
+
