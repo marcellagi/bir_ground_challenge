@@ -19,9 +19,13 @@ The objective is to carry out the [mission](#mission) obeying the [prerequisites
 
 ## Mission
 
-The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must go through a delimited [environment](#Environment) starting at the start point highlighted in the figure, being positioned with the camera facing away from the entrance. The mission environment is similar to a labyrinth, composed of two corridors and with the 3 previously placed [fiducial markers](#aruco-fiducial-marker). The robot must go through the environment completely and reach the end point, at the end of the route (arrival at the final point) there will be an [object](#object) that must be identified.
+The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must go through a delimited [environment](#Environment) starting at the start point highlighted in the [figure](#figure), being positioned with the camera facing away from the entrance. The mission environment is similar to a labyrinth, composed of two corridors and with the 3 previously placed [fiducial markers](#aruco-fiducial-marker). The robot must go through the environment completely and reach the end point, at the end of the route (arrival at the final point) there will be an [object](#object) that must be identified.
 
 ### Environment
+
+#### figure
+
+![figure](./source/envedited.png)
 
 ### Object
 
