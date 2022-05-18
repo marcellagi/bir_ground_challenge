@@ -22,10 +22,10 @@ Developing skills and knowledge in navigation is very important for a researcher
 
 ## Objective
 
-The objective is to carry out the [mission](#mission) obeying the [prerequisites](#prerequisites).
+The objective is to carry out the [mission](#heavy-hull-mission) obeying the [prerequisites](#prerequisites).
 
 
-## Mission
+## Heavy Hull Mission
 
 The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must go through a delimited [environment](#Environment) starting at the start point highlighted in the [example environment](#example-environment), being positioned with the camera facing away from the entrance. The mission environment is similar to a maze, composed of two corridors and with the 3 previously placed [fiducial markers](#aruco-fiducial-marker). The robot must go through the environment completely and reach the end point, at the end of the route (arrival at the final point) there will be an [object](#object) that must be identified.
 
@@ -52,7 +52,7 @@ The markers used must be of the ArUco type
 - The challenge must be performed using [ROS2](https://docs.ros.org/en/foxy/index.html)
 - For autonomous navigation, ***state-machine*** must be used
 - The simulation and real [environment](#environment) must be built based on the [example environment](#example-environment)
-- The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must make the [environment](#environment) map while executing the [mission](#mission)
+- The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must make the [environment](#environment) map while executing the [mission](#heavy-hull-mission)
 - The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must use **three** [fiducial markers](#aruco-fiducial-marker) for localization
 
 
