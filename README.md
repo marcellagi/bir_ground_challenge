@@ -8,6 +8,14 @@ This repository supports the development of the ground robotics challenge from [
 **Affiliation**: [RASC](https://www.braziliansinrobotics.com/) <br/>
 **Maintainer**: [Anderson Lima](https://github.com/aldenpower), eng.andersonfsl@gmail.com
 
+**Sharp your spear!**
+
+_For a good development it is suggested that you perform the following tutorials_
+
+- [ROS2](https://docs.ros.org/en/foxy/Tutorials.html)
+- [turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+- [Nav2](https://navigation.ros.org/)
+
 ## Justification
 
 Developing skills and knowledge in navigation is very important for a researcher in the field of robotics, in view of the growth of mobile robotics applied to the theme "robots in terrestrial environment", it is necessary to develop mechanisms that solidify knowledge in a practical way. Concepts such as *SLAM, State-machine, computer vision and localization* are quite recurrent in this context, so, the **Heavy Hull** challenge proposes the systematic application of these concepts in order to strengthen future developments.
@@ -19,7 +27,7 @@ The objective is to carry out the [mission](#mission) obeying the [prerequisites
 
 ## Mission
 
-The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must go through a delimited [environment](#Environment) starting at the start point highlighted in the [example environment](#example-environment), being positioned with the camera facing away from the entrance. The mission environment is similar to a labyrinth, composed of two corridors and with the 3 previously placed [fiducial markers](#aruco-fiducial-marker). The robot must go through the environment completely and reach the end point, at the end of the route (arrival at the final point) there will be an [object](#object) that must be identified.
+The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must go through a delimited [environment](#Environment) starting at the start point highlighted in the [example environment](#example-environment), being positioned with the camera facing away from the entrance. The mission environment is similar to a maze, composed of two corridors and with the 3 previously placed [fiducial markers](#aruco-fiducial-marker). The robot must go through the environment completely and reach the end point, at the end of the route (arrival at the final point) there will be an [object](#object) that must be identified.
 
 ### Environment
 
