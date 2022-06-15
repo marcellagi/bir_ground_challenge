@@ -1,12 +1,11 @@
 # bir_ground_challenge
 
+![figure](./source/turtle-map.png)
+
 This repository supports the development of the ground robotics challenge from [RASC](https://www.braziliansinrobotics.com/).
 
 **Keywords**: Challenge, Ground-robotics, Turtlebot3
 
-**Author**: [Anderson Lima](https://github.com/aldenpower) <br/>
-**Affiliation**: [RASC](https://www.braziliansinrobotics.com/) <br/>
-**Maintainer**: [Anderson Lima](https://github.com/aldenpower), eng.andersonfsl@gmail.com
 
 **Sharp your spear!**
 
@@ -55,6 +54,12 @@ The markers used must be of the ArUco type
 - The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must make the [environment](#environment) map while executing the [mission](#heavy-hull-mission)
 - The [**Turtlebot 3**](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) must use **three** [fiducial markers](#aruco-fiducial-marker) for localization
 
-## Questions?
+## Any Questions?
 
-contact: [Anderson Lima](https://github.com/aldenpower), eng.andersonfsl@gmail.com
+[Anderson Lima](https://github.com/aldenpower) : _eng.andersonfsl@gmail.com_
+[Marco Reis](https://github.com/mhar-vell) : _marcoreis@fieb.org.br_
+
+<hr>
+
+_For more codes visit_ [BIR - BrazilianInstituteofRobotics](https://github.com/Brazilian-Institute-of-Robotics)
+_For more informations visit_ [RASC](https://www.braziliansinrobotics.com/)
