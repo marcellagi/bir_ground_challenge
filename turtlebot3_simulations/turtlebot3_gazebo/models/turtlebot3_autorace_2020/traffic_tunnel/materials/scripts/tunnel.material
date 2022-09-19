@@ -1,0 +1,16 @@
+material traffic_tunnel
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture tunnel.png
+        texture parking.png
+        texture construction
+      }
+    }
+  }
+}
+
