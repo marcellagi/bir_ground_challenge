@@ -19,6 +19,8 @@
 
 # Author: Leon Jung, Gilbert, Ashe Kim
  
+
+from std_msgs.msg import Bool
 import rospy
 import os
 from enum import Enum
@@ -37,6 +39,7 @@ class DetectParking():
         self.pub_parking_return = rospy.Publisher('/detect/parking_stamped', UInt8, queue_size=1)
         self.pub_moving = rospy.Publisher('/control/moving/state', MovingParam, queue_size= 1)
         self.pub_max_vel = rospy.Publisher('/control/max_vel', Float64, queue_size = 1)
+        self.teste = rospy.Subscriber("/detect_parking",Bool, self.callback1, queue_size = 1)
 
         self.StepOfParking = Enum('StepOfParking', 'parking exit')
         self.start_obstacle_detection = False
@@ -46,6 +49,10 @@ class DetectParking():
 
     def cbMovingComplete(self, data):
         self.is_moving_complete = True
+    
+    def callback1(self, data):
+        print("vai bebê!")
+        
 
     def cbParkingOrder(self, order):
         msg_pub_parking_return = UInt8()
