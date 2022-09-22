@@ -56,6 +56,7 @@ The markers used must be of the ArUco type
 
 ## Any Questions?
 
+
 [Anderson Lima](https://github.com/aldenpower) : _eng.andersonfsl@gmail.com_
 [Marco Reis](https://github.com/mhar-vell) : _marcoreis@fieb.org.br_
 
@@ -63,3 +64,48 @@ The markers used must be of the ArUco type
 
 _For more codes visit_ [BIR - BrazilianInstituteofRobotics](https://github.com/Brazilian-Institute-of-Robotics)
 _For more informations visit_ [RASC](https://www.braziliansinrobotics.com/)
+
+
+## Development
+**1.** Install [**ROS Noetic**](http://wiki.ros.org/noetic/Installation/Ubuntu).
+
+**2.** Create a workspace, clone this repository and build the workspace.
+```
+pc remoto
+$ roscore
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+$ rosrun map_server map_saver -f ~/map
+```
+```
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+```
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_detect detect_sign.launch mission:=SELECT_MISSION
+$ rqt_image_view
+```
+turtle
+$ ssh ubuntu@10.88.119.10
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+$ roslaunch turtlebot3_autorace_camera raspberry_pi_camera_publish.launch
+```
+**3.** Initialize the simulation
+```
+$ source /ardrone_ws/devel/setup.bash
+$ roslaunch ardrone_challenge challenge.launch
+```
+**4.** Inicialize the node
+```
+$ source /ardrone_ws/devel/setup.bash
+$ rosrun ardrone_challenge drone_move.py
+```
+**5.** If you want to compare the real position of the drone with the one it is in the node
+```
+$ rostopic echo /ardrone/gt_pose
+```
+The node positions are printed while the node is running.
