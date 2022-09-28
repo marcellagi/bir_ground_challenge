@@ -123,7 +123,7 @@ class DetectSign():
 
                 self.pub_traffic_sign.publish(msg_sign)
 
-                rospy.loginfo("tunnel")
+                rospy.loginfo("tag2")
                 image_out_num = 4
 
         else:
