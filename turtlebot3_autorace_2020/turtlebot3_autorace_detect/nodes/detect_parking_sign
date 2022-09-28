@@ -124,7 +124,7 @@ class DetectSign():
 
                 self.pub_traffic_sign.publish(msg_sign)
 
-                rospy.loginfo("parking")
+                rospy.loginfo("tag1")
                 image_out_num = 2
 
         else:
